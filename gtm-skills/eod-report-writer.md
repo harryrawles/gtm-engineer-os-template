@@ -117,7 +117,7 @@ For each client, sort items into:
   "Account's healthy, nothing changed" is not a push and does not belong in MOVED - if nothing was scaled or expanded today, it doesn't get a bullet just for being touched.
 
 - **Template C - everything else.** State the concrete reason or result, not the bare action. "Awaiting approval" belongs **here** - the work got done, it is just pending review.
-  > Weak: `Enriched leads for Acme.` Better: `Enriched 400k companies for Acme to clear the TAM ceiling flagged last week.`
+  > Weak: `Enriched leads for Acme.` Better: `Enriched 250k companies for Acme to clear the TAM ceiling flagged last week.`
 
 **BLOCKED - barriers in the way.** Genuine hard blockers only: data quality halting a campaign, churn risk, a client constraint with no clear path forward, an unmet external dependency, or a `tool_fail` that stopped progress. A stagnant account is **not** automatically a blocker - it's a MOVED (Template A) candidate if it was worked today, or it's simply absent from the report if it wasn't touched at all (portfolio-wide staleness sweeps are `client-health-scorer.md`'s job, not this one's). If nothing qualifies, write `* N/A`. A *potential* blocker can be flagged inside a MOVED bullet ("May move this to Blocked.") rather than forced here.
 
@@ -170,7 +170,7 @@ After presenting, if the trail shows any of the rest of the `OPERATING-RHYTHM.md
 ## RULES
 
 - **Default delivery channel: `{{eod-slack-channel}}`** (set this once the GTME confirms which channel the portfolio EOD report always goes to - no need to ask each time once it's set here).
-- **Never send without asking first, every time.** Present the report and ask for explicit approval before posting - even though the channel is now known by default, approval is per-report, not standing. Posting to Slack is hard-blocked by the Safety Guard (`.claude/hooks/safety-guard.sh`; CLAUDE.md Safety Guard rule 1) regardless of chat approval - once the GTME approves, use the scoped one-time carve-out pattern already established for gated writes in this OS (add the specific op to the allow-list, send, then immediately revert and verify via `git diff`). Confirmed 2026-07-13: an actual send is fine post-approval - it does not need to stop at a Slack draft.
+- **Never send without asking first, every time.** Present the report and ask for explicit approval before posting - even though the channel is now known by default, approval is per-report, not standing. Posting to Slack is gated by the Safety Guard (`.claude/hooks/safety-guard.sh`; CLAUDE.md Safety Guard rule 1), so the send itself also needs approval at the guard. Never edit the guard to get a message through.
 - **Portfolio, not client-specific.** Do not ask for an active client - report across everyone worked on today.
 - **Never invent** outcomes, numbers, causes, or client names. No activity today - say so plainly.
 - **No bare activity bullets.** "Added leads," "reworked copy," "worked on X," "followed up" are not complete bullets on their own - every bullet pairs the action with a diagnosed cause, a named lever, or a concrete result (STEP 3).

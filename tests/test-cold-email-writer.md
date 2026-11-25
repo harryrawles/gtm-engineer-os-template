@@ -2,7 +2,7 @@
 
 ## Scenario
 
-Generate Email 1 for {{CLIENT_NAME}}'s hiring signal campaign targeting VP Engineering. The OS has the {{CLIENT_NAME}} example data loaded.
+Generate Email 1 for {{CLIENT_NAME}}'s hiring signal campaign targeting VP Engineering. Assumes a client folder has been onboarded with an offer, ICP and voice for this client.
 
 ## Input
 
@@ -27,7 +27,7 @@ Claude should:
 - Under 60 words (ATL ceiling)
 - No question marks except CTA
 - Subject 2-4 words, lowercase
-- Use approved claims from clients/{slug}/offer.md only ({{NAMED_PROOF_COMPANY}} $100k, 72-hour shortlist, etc.)
+- Use approved claims from clients/{slug}/offer.md only ({{NAMED_PROOF_COMPANY}} $60k, 5-day shortlist, etc.)
 - Match voice (American English, direct, data-led, no fluff)
 - Do NOT mention the signal directly ("saw you posted 3 roles")
 
@@ -40,13 +40,13 @@ Claude should:
 ## Expected Output Structure (not exact text)
 
 ```
-Starting point: Building from Hiring Signal v4 Email 1. Register: ATL. Personalisation: Lite hook (job posting count).
+Starting point: Building from the best Hiring Signal Email 1 in copy-library.md (or from scratch if empty). Register: ATL. Personalisation: Lite hook (job posting count).
 
 Subject: hiring speed
 
 Part 1 (personalisation): References the implication of hiring posts, not the posts themselves
 Part 2 (who am I): Uses "I" + specific number + named client
-Part 3 (offer): {{NAMED_PROOF_COMPANY}} case study + specific dollar figure + 72-hour shortlist
+Part 3 (offer): {{NAMED_PROOF_COMPANY}} case study + specific dollar figure + 5-day shortlist
 Part 4 (CTA): Binary question, 5-word reply or less
 
 [Total: 45-55 words]

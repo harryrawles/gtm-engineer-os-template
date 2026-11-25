@@ -135,8 +135,6 @@ Without this row, `gtm-skills/pattern-detector.md` cannot find repeating prompts
   passes cleanly - Complete rewrite means the whole thing changes together by definition. If the genotype
   in 1.1 lists multiple named variables all moving to a new version at once, that's usually a framing
   problem to fix (collapse to one Stimulus variable), not a genuine multi-variable violation to warn on.
-  (Confirmed 2026-07-13 - a client's T-001 first framing tripped this warning unnecessarily; reframing
-  as a single Stimulus resolved it with zero design change.)
 
 **12. Modification level appropriateness**
 - Slight modification on a dead variant (PRR <0.5% vs 1% target) → warn, recommend complete
@@ -155,8 +153,7 @@ Without this row, `gtm-skills/pattern-detector.md` cannot find repeating prompts
   up the priority order (`wiki/scientific-method.md` Section on test priority: Offer > ICP/targeting >
   icebreaker/personalisation > CTA > subject line). That's a CTA test wearing an Offer-test's genotype -
   warn and recommend either reframing the genotype honestly as a CTA test, or rewriting the variants so
-  they actually differ on the stated variable. (Confirmed 2026-07-13 - caught on a client's T-001 before
-  any data accumulated, redesigned as 3 genuinely Offer-led arms.)
+  they actually differ on the stated variable.
 - If the sequence has a later step (e.g. day+3 follow-up) with its own multiple variants, don't assume
   Instantly can pair "which step-2 variant a lead sees" to "which step-1 arm they got" - it can't thread
   conditional logic across sequence steps. Later-step variants in a multi-arm test should either be kept

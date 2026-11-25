@@ -59,9 +59,9 @@ Things the client mentioned that should shape how we operate but are not formal 
 
 Things to remember when working on this account. Patterns that surprised us, edge cases, sensitivities.
 
-- {{e.g. "{{PRIMARY_CONTACT}} is sensitive about 'agency churn' framing - many of his prospects have been burned by recruiters before"}}
+- {{e.g. "{{PRIMARY_CONTACT}} is sensitive about 'agency churn' framing - many of their prospects have been burned by agencies before"}}
 - {{e.g. "Avoid 'cold' language - {{PRIMARY_CONTACT}} wants outbound positioned as warm and signal-driven"}}
-- {{e.g. "Crypto industries are off limits - they had two payment disputes in 2025"}}
+- {{e.g. "Crypto industries are off limits - they had a bad experience with that sector before"}}
 
 ---
 

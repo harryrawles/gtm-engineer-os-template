@@ -72,7 +72,7 @@ Ask the GTME to confirm interpretation if ambiguous.
 | **G - Reporting question** | "What's our PRR this month", "How many meetings did we book", "Send me the data" | `gtm-skills/campaign-analyst.md` or `gtm-skills/client-report-writer.md` |
 | **H - Strategic / Q4 planning** | "Plan Q4", "What should we change", "What's working" | `gtm-skills/qbr-writer.md` or strategic discussion |
 | **I - Performance concern** | "PRR seems low", "Why are we underperforming" | `gtm-skills/campaign-optimiser.md` + diagnostic. If this Type fires at all, proactive disclosure was missed, the client should already know before they ask. |
-| **J - Contract / billing** | "Renewal terms", "Invoice question", "I want a refund" | Manual - escalate to the AM, not the GTME (billing is AM-owned per `wiki/glossary.md` (Roles)), using your team's escalation channel. Refund requests: no commitments, escalate immediately to the AM, tag the manager if the client has public presence |
+| **J - Contract / billing** | "Renewal terms", "Invoice question", "I want a refund" | Manual - escalate to the AM, not the GTME (billing is AM-owned per `wiki/glossary.md` (Roles)), using your team's escalation channel. Refund requests: no commitments, escalate per your own policy. |
 | **K - Asset request** | "Send the deck", "Share the case study" | Manual - pull from `assets/` and send |
 | **L - Custom / unclear** | Anything else | Capture and flag for the GTME |
 

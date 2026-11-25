@@ -29,10 +29,6 @@ If a test fails after an OS change:
 |------|--------------|
 | `test-onboarding.md` | Client onboarder Phase 1-5 flow with sample inputs |
 | `test-cold-email-writer.md` | Cold email generation with quality bar |
-| `test-weekly-reviewer.md` | Weekly review with sample campaign data |
-| `test-reply-handler.md` | Reply classification and response for 5 reply types |
-| `test-incident-responder.md` | Incident classification and protocol triggering |
-| `test-pre-launch-check.md` | Placeholder validation gate |
 
 ---
 

@@ -22,7 +22,7 @@ writes:
 
 **Trigger:** "Score [client] health", "Health check on [client]", "Which clients are at risk", "Portfolio health"
 
-**Context:** At 20 clients, knowing which ones are at risk is the most important meta-question the GTME will face every Monday. This skill computes a structured health score per client and surfaces churn risk early. It operationalises the principle of prioritising by account value (high-value and churn-risk accounts first), and is the detection half of churn prevention: good onboarding is the prevention half, reducing how often a client reaches Amber/Red here in the first place.
+**Context:** Across a full portfolio, knowing which ones are at risk is the most important meta-question the GTME will face every Monday. This skill computes a structured health score per client and surfaces churn risk early. It operationalises the principle of prioritising by account value (high-value and churn-risk accounts first), and is the detection half of churn prevention: good onboarding is the prevention half, reducing how often a client reaches Amber/Red here in the first place.
 
 ---
 
@@ -114,8 +114,7 @@ From `clients/{slug}/comms-log.md` (last 30 days):
 
 ### 7. Strategic Position (5 points)
 
-Renewal proximity is a prioritisation signal here
-"Prioritise by Account Value", not a cue for GTME to run the renewal conversation. Renewal terms and
+Renewal proximity is a prioritisation signal here, not a cue for GTME to run the renewal conversation. Renewal terms and
 pricing are the AM's (`wiki/glossary.md` (Roles)).
 
 | Sub-metric | Weight | Scoring |

@@ -217,8 +217,8 @@ plainly as a busy one.
 5. **Light ask, only if there's a real one.**
 6. **Warm sign-off.**
 
-Keep every version short and conversational, the length and register of the four examples the GTME
-provided, not a report. Sign off as the GTME by name, not as the company.
+Keep every version short and conversational, a few lines,
+not a report. Sign off as the GTME by name, not as the company.
 
 ---
 

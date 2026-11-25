@@ -40,7 +40,7 @@ WINNER CANDIDATE - Hiring Signal v4 / Email 1
 
 Copy:
 Subject: hiring speed
-Saw the senior eng hires coming in. Most VPs of Eng at this stage are losing 10-15 hrs/week interviewing low-signal candidates from outsourcing firms. We only source from VC-backed product companies - {{NAMED_PROOF_COMPANY}}'s VP closed 4 hires this way, saved $100k vs in-house. Want a sample shortlist?
+Saw the senior eng hires coming in. Most VPs of Eng at this stage are losing 10-15 hrs/week interviewing low-signal candidates from outsourcing firms. We only source from product-led scale-ups - {{NAMED_PROOF_COMPANY}}'s VP closed 3 hires this way, saved $60k vs in-house. Want a sample shortlist?
 
 Log this as a winner? [GTME: Yes]
 
@@ -48,7 +48,7 @@ Why do you think this worked? [GTME: "Saw the senior eng hires coming in" is gen
 
 What is the most stealable element? [GTME: The "sample shortlist" CTA pattern. Lower friction than time ask. Going to test it on Funding campaign Email 1 too.]
 
-Anything you would NOT carry over to another client? [GTME: The $100k {{NAMED_PROOF_COMPANY}} figure. Other clients need their own dollar story.]
+Anything you would NOT carry over to another client? [GTME: The $60k {{NAMED_PROOF_COMPANY}} figure. Other clients need their own dollar story.]
 
 Writing to clients/{slug}/copy-library.md... done.
 Writing to clients/{slug}/decision-log.md... done.
@@ -62,7 +62,7 @@ LOSER CANDIDATE - Funding v2 / Email 1
 
 Copy:
 Subject: runway math
-Saw you raised your Series B in March. Most VPs of Eng I talk to at this stage are mapping out a 30-50% headcount increase over 12 months - but the math gets ugly fast. We helped {{NAMED_PROOF_COMPANY_2}} close 4 senior eng roles in 14 days, saved $80k vs in-house. Worth a quick chat?
+Saw you raised your Series B in March. Most VPs of Eng I talk to at this stage are mapping out a 30-50% headcount increase over 12 months - but the math gets ugly fast. We helped {{NAMED_PROOF_COMPANY_2}} close 3 senior eng roles in 19 days, saved $45k vs in-house. Worth a quick chat?
 
 Log to graveyard? [GTME: Yes - confirmed it's underperforming.]
 

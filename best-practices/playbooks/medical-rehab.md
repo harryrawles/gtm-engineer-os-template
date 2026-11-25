@@ -58,7 +58,7 @@ Pick the angle that fits the leader / ministry.
 ```
 Hi / Hey / Hello {{FirstName}},
 
-I created a short 8-Point Ministry Guide for church leaders on how to respond to a congregant struggling with addiction in a way that faithfully integrates the gospel with medical and clinical care.
+I created a short {{GUIDE_NAME}} for church leaders on how to respond to a congregant struggling with addiction in a way that faithfully integrates the gospel with medical and clinical care.
 
 It's informed by data showing many pastors feel unprepared to address addiction biblically within their congregation.
 
@@ -92,7 +92,7 @@ If this isn't relevant, just let me know.
 ```
 Hi / Hey / Hello {{FirstName}},
 
-I put together an 8-Point Ministry Guide showing how churches help families heal together through Christ-centered addiction recovery.
+I put together a {{GUIDE_NAME}} showing how churches help families heal together through Christ-centered addiction recovery.
 
 This guide is based on programs where faith and family involvement have been shown to significantly improve outcomes.
 

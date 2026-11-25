@@ -17,7 +17,7 @@ Index of external assets for this client. Files are stored externally (Google Dr
 
 | Asset | Use case | Link |
 |-------|---------|------|
-| {{Standard sales deck}} | Sent in objection-handler Step 2F | {{URL}} |
+| {{Standard sales deck}} | Sent after an objection (see `gtm-skills/reply-handler.md`) | {{URL}} |
 | {{1-pager}} | Quick value summary | {{URL}} |
 | {{Pricing sheet}} | Used after price objection | {{URL}} |
 

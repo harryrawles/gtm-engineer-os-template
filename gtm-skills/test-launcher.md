@@ -180,10 +180,9 @@ For a **full-rewrite test replacing a dead campaign** (Complete modification lev
 leads and activating are separate gated actions from creating the Draft - do not bundle them into the same
 approval unless the GTME explicitly asked for all three.
 
-**Naming convention - every new campaign name starts with `Instantly | `.** e.g. `Instantly | {{Client}}
-| Checkout Sequence V2`. This applies to every client, not just one - confirmed 2026-07-13 after a
-client's GTME renamed a campaign that had been created without the prefix. Get the prefix right the first
-time rather than relying on the GTME to rename after the fact.
+**Naming convention - every new campaign name follows one consistent pattern across clients**, e.g.
+`{{PREFIX}} | {{Client}} | {{Campaign description}}`. Pick the pattern once, record it in `CLAUDE.md`, and get
+it right at creation rather than relying on the GTME to rename after the fact.
 
 QA before any write, same as before:
 - Subject and body match the approved variant exactly
@@ -297,11 +296,11 @@ Generating variant via cold-email-writer...
 
 CONTROL (current Email 1):
 Subject: runway math
-Saw you raised your Series B in March. Most VPs of Eng I talk to at this stage are mapping out a 30-50% headcount increase over 12 months - but the math gets ugly fast. We helped {{NAMED_PROOF_COMPANY_2}} close 4 senior eng roles in 14 days, saved $80k vs in-house. Worth a quick chat on the hiring strategy?
+Saw you raised your Series B in March. VPs of Eng at this stage are usually mapping out a 30-50% headcount increase over 12 months - but the math gets ugly fast. We helped {{NAMED_PROOF_COMPANY_2}} close 3 senior eng roles in 19 days, saved $45k vs in-house. Worth a quick chat on the hiring strategy?
 
 VARIANT (T-006):
 Subject: scale without headcount
-Saw the Series B. Most teams post-raise default to "hire faster" - but at $5M-15M ARR, most engineering bottlenecks are about throughput per engineer, not headcount. We work with VC-backed product teams to scale eng velocity without the linear hire spend. Worth a quick chat?
+Saw the Series B. Post-raise, the default plan is "hire faster" - but at $5M-15M ARR, most engineering bottlenecks are about throughput per engineer, not headcount. We work with product-led teams to scale eng velocity without the linear hire spend. Worth a quick chat?
 
 Variables tested: Offer framing (Part 3 of formula)
 What is different: Reframed from "hiring strategy" to "scale without headcount"

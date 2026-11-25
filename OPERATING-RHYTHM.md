@@ -4,8 +4,8 @@ The daily, weekly, monthly, and quarterly cadence for managing GTM accounts. Fol
 
 **Total time investment for 20 clients:** ~20-25 hours per week (with triage-first Friday review).
 
-> The two daily checkpoints below (Morning Check, End of Day Wrap) bookend the working day. Default
-> response times: 24-hour acknowledgement of any client message, 3-day campaign update.
+> The two daily checkpoints below (Morning Check, End of Day Wrap) bookend the working day. Set your own
+> default response times (e.g. 24-hour acknowledgement of any client message, 3-day campaign update).
 
 ---
 

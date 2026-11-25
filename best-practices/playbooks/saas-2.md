@@ -2,7 +2,7 @@
 
 **Type:** Shared campaign playbook (client-agnostic). Reusable for any client selling a **developer-workflow
 tool** to product & engineering teams - led by in-IDE workflow integration, speed/autonomy, and shipping
-velocity (not tooling jargon). Example built around MCP-powered autonomous QA.
+velocity (not tooling jargon). Example built around AI-assisted QA.
 **Origin:** Abstracted from a dev-tools QA campaign. All brand-specific values are placeholders -
 fill them from the active client's `clients/{slug}/offer.md`, `icp.md`, and `voice.md`.
 
@@ -58,7 +58,7 @@ Merge fields are Instantly variables - keep them as-is (`{{firstName}}`, `{{send
 ```
 Hi {{firstName}},
 
-We're introducing engineering teams to {{COMPANY}}'s new MCP-powered workflow - autonomous QA that runs directly inside {{SUPPORTED_IDES}}.
+We're introducing engineering teams to {{COMPANY}}'s new {{TECH_HOOK}} workflow - AI-assisted QA that runs directly inside {{SUPPORTED_IDES}}.
 
 Early adopters are replacing slow test cycles with instant coverage checks as they code.
 
@@ -73,7 +73,7 @@ Interested in a quick overview?
 ## Key Value Points (use only real, approved points)
 
 - Autonomous QA inside the IDE
-- MCP-powered workflows
+- {{TECH_HOOK}} workflows
 - No context switching
 - Faster shipping with higher confidence
 - QA happens as code is written

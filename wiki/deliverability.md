@@ -126,7 +126,7 @@ GDPR-flagged replies (legal language, data requests) escalate to the GTME's mana
 - Workspace-level sending throttled
 - Mailbox or domain provisioning for a new client or new capacity
 
-Activating an existing pre-warm pile for a client is a GTME software action within the sending tool, not new
+Activating existing warmed mailboxes for a client is a GTME software action within the sending tool, not new
 provisioning, it's not on this list.
 
 See `wiki/glossary.md` (Roles) for the full ownership split.

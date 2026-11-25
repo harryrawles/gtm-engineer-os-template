@@ -57,7 +57,7 @@ Merge fields are Instantly variables - keep them as-is (`{{FirstName}}`, `{{Comp
 ```
 Hey / Hi / Hello {{FirstName}},
 
-I drafted a short guide based on lessons from thousands of church merch orders.
+I drafted a short guide based on lessons from {{ORDER_VOLUME_CLAIM}}.
 
 We're asking a few church leaders to glance at it and let us know if it hits the mark.
 
@@ -108,7 +108,7 @@ If this isn't relevant, just let me know.
 ```
 Hey / Hi / Hello {{FirstName}},
 
-After printing apparel for churches nationwide, we put together a simple Buyer's Guide.
+After {{SCALE_CLAIM}}, we put together a simple Buyer's Guide.
 
 It's packed with practical tips to help make sure shirts and hoodies turn out exactly as expected - without surprises.
 

@@ -71,10 +71,10 @@ Reply "demo" and I'll send a short video.
 
 **Feature block - illustrative example (replace with the client's real modules):**
 
-- **Word of the Week** - weekly insights from a marquee coach, built around one leadership theme.
-- **Builders** - 100+ short video lessons from elite coaches and athletes; assign to a team in seconds.
-- **Journal** - guided prompts that help athletes build perspective, discipline, and growth.
-- **Pulse** - daily 2-minute surveys giving a snapshot of team culture and athletes' well-being.
+- **{{FEATURE_1}}** - e.g. a weekly leadership insight built around one theme.
+- **{{FEATURE_2}}** - e.g. a library of short video lessons a coach can assign to a team.
+- **{{FEATURE_3}}** - e.g. guided reflection prompts for athletes.
+- **{{FEATURE_4}}** - e.g. a short recurring survey on team culture and well-being.
 
 ---
 

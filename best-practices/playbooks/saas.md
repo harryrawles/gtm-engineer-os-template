@@ -3,14 +3,14 @@
 **Type:** Shared campaign playbook (client-agnostic). Reusable for any client selling a **purpose-built,
 plug-and-play SaaS automation platform** into a fast-moving vertical - led by operational risk + speed,
 "industry-specific not generic", technical readiness, and a low-friction free trial.
-**Origin:** Abstracted from a precious-metals pricing-automation SaaS campaign. All brand-specific values are
+**Origin:** Abstracted from a pricing-automation SaaS campaign. All brand-specific values are
 placeholders - fill them from the active client's `clients/{slug}/offer.md`, `icp.md`, and `voice.md`.
 
 > **How to use:** this is a starting structure, not drop-in copy. Swap every `{{PLACEHOLDER}}` for the
 > active client's real values, and only make claims that appear in that client's `voice.md` → *Approved
 > Claims*. Named customers (`{{NOTABLE_CUSTOMERS}}`) require permission to reference - use only approved
 > logos. Trial terms (`{{TRIAL_OFFER}}`) and integration claims (APIs, ERP sync) must be real. The copy below
-> is written around precious-metals dealers - re-skin the vertical, pain points, and integrations to the
+> is written around {{VERTICAL}} sellers - re-skin the vertical, pain points, and integrations to the
 > client's actual market. Never carry one client's specifics into another.
 
 ---
@@ -23,8 +23,8 @@ solution for that industry.
 
 ## Ideal Customer Profile (ICP)
 
-**Targets (example - precious-metals dealers; re-skin per client):**
-- Online dealers / ecommerce operators in the vertical
+**Targets (example - {{VERTICAL}} sellers; re-skin per client):**
+- Online sellers / ecommerce operators in the vertical
 - Operations / product managers
 - CTOs / technical leads
 - Finance or pricing owners
@@ -37,7 +37,7 @@ solution for that industry.
 **Pain points:**
 - Manual updates during fast market swings
 - Margin risk from delayed action
-- Complex integrations with data/dealer feeds
+- Complex integrations with data/supplier feeds
 - Sync issues across ecommerce, ERP, and marketplaces
 - Building and maintaining infrastructure in-house
 
@@ -63,9 +63,9 @@ approved reference customers; `{{TRIAL_OFFER}}` = the client's real trial terms.
 ```
 Good Morning / Afternoon / Evening {{FirstName}},
 
-Curious how you're currently managing product repricing when the metals market moves?
+Curious how you're currently managing product repricing when the market moves?
 
-We work with online precious metals dealers to automate pricing updates based on real-time spot changes - including wholesale dealer APIs and live cost syncing.
+We work with online {{VERTICAL}} sellers to automate pricing updates based on real-time market changes - including {{INTEGRATION_1}} and {{INTEGRATION_2}}.
 
 Happy to share how teams cut manual work and protect margins with real-time sync.
 
@@ -82,9 +82,9 @@ If you're not interested, just reply "no thanks" and you won't hear from me agai
 ```
 Good Morning / Afternoon / Evening {{FirstName}},
 
-I work with businesses like {{CompanyName}} that need to reprice products constantly, especially when metals markets spike.
+I work with businesses like {{CompanyName}} that need to reprice products constantly, especially when their market spikes.
 
-{{COMPANY}} automates the entire process - live SKUs, pricing sync, wholesale dealer APIs, and real-time cost syncing. It's API-ready and integrates with most platforms in just a few clicks.
+{{COMPANY}} automates the entire process - live SKUs, pricing sync, {{INTEGRATION_1}}, and {{INTEGRATION_2}}. It's API-ready and integrates with most platforms in just a few clicks.
 
 The {{TRIAL_OFFER}} includes full support to get you live without heavy tech lift.
 
@@ -101,11 +101,11 @@ If you're not interested, just reply "no thanks" and you won't hear from me agai
 ```
 Good Morning / Afternoon / Evening {{FirstName}},
 
-{{COMPANY}} was built specifically for companies like {{CompanyName}} that sell precious metals online.
+{{COMPANY}} was built specifically for companies like {{CompanyName}} that sell {{VERTICAL_PRODUCT}} online.
 
-We solve the challenge of keeping pricing accurate across your ecommerce site, ERP, and marketplaces using live data feeds, wholesale dealer APIs, and real-time cost syncing.
+We solve the challenge of keeping pricing accurate across your ecommerce site, ERP, and marketplaces using live data feeds, {{INTEGRATION_1}}, and {{INTEGRATION_2}}.
 
-This isn't a generic pricing tool - it's purpose-built for bullion dealers.
+This isn't a generic pricing tool - it's purpose-built for {{VERTICAL}} sellers.
 
 Is it okay if I share more details?
 
@@ -120,9 +120,9 @@ If you're not interested, just reply "no thanks" and you won't hear from me agai
 ```
 Good Morning / Afternoon / Evening {{FirstName}},
 
-We help online precious metals dealers automate product pricing using live data from global exchanges.
+We help online {{VERTICAL}} sellers automate product pricing using live market data.
 
-Your catalog updates in real time across your storefront, ERP, and third-party sales channels - with support for wholesale dealer APIs and real-time cost syncing.
+Your catalog updates in real time across your storefront, ERP, and third-party sales channels - with support for {{INTEGRATION_1}} and {{INTEGRATION_2}}.
 
 Would you like me to share more details?
 
@@ -137,9 +137,9 @@ If you're not interested, just reply "no thanks" and you won't hear from me agai
 ```
 Good Morning / Afternoon / Evening {{FirstName}},
 
-Are you still updating prices manually when the metals market moves?
+Are you still updating prices manually when the market moves?
 
-{{COMPANY}} gives businesses like {{CompanyName}} live pricing tools built for the bullion space - including wholesale dealer APIs and real-time cost syncing - without needing to build or manage infrastructure internally.
+{{COMPANY}} gives businesses like {{CompanyName}} live pricing tools built for the {{VERTICAL}} space - including {{INTEGRATION_1}} and {{INTEGRATION_2}} - without needing to build or manage infrastructure internally.
 
 Can I share more details?
 
@@ -154,9 +154,9 @@ If you're not interested, just reply "no thanks" and you won't hear from me agai
 ```
 Good Morning / Afternoon / Evening {{FirstName}},
 
-Precious metals pricing moves fast, and the businesses that adapt in real time win.
+{{VERTICAL}} pricing moves fast, and the businesses that adapt in real time win.
 
-We've helped companies like {{NOTABLE_CUSTOMERS}} automate pricing syncs, catalog updates, and order workflows - now including wholesale dealer APIs and real-time cost syncing.
+We've helped companies like {{NOTABLE_CUSTOMERS}} automate pricing syncs, catalog updates, and order workflows - now including {{INTEGRATION_1}} and {{INTEGRATION_2}}.
 
 The platform is prebuilt, tested, and ready to plug in, with a {{TRIAL_OFFER}} included.
 
@@ -173,9 +173,9 @@ If you're not interested, just reply "no thanks" and you won't hear from me agai
 ```
 Good Morning / Afternoon / Evening {{FirstName}},
 
-We built {{COMPANY}} for one thing: keeping your metals data accurate everywhere it's used.
+We built {{COMPANY}} for one thing: keeping your pricing data accurate everywhere it's used.
 
-That includes live spot prices, updated SKUs, broadcast-ready feeds, wholesale dealer APIs, and real-time cost syncing.
+That includes live market prices, updated SKUs, {{INTEGRATION_1}}, and {{INTEGRATION_2}}.
 
 You can test it free with {{TRIAL_OFFER}} and full support included.
 
@@ -192,7 +192,7 @@ If you're not interested, just reply "no thanks" and you won't hear from me agai
 ## Key Selling Points (adapt to the client's real, approved capabilities)
 
 - Real-time automation of the core, volatile task
-- Native API integrations (dealer feeds, exchanges)
+- Native API integrations (supplier feeds, market data)
 - Live cost / data syncing
 - Multi-channel catalog accuracy
 - No manual work
@@ -227,7 +227,7 @@ If you're not interested, just reply "no thanks" and you won't hear from me agai
 - [ ] `{{COMPANY}}` → client brand (from `clients/{slug}/_config.md`)
 - [ ] `{{NOTABLE_CUSTOMERS}}` → only reference customers the client has permission to name (`voice.md` → Approved Claims)
 - [ ] `{{TRIAL_OFFER}}` → the client's real trial terms (e.g. length, support scope) from `offer.md`
-- [ ] Re-skin the vertical, pain points, and integrations to the client's actual market - the sample copy is precious-metals-specific
+- [ ] Re-skin the vertical, pain points, and integrations to the client's actual market - the sample copy is vertical-specific
 - [ ] `{{FirstName}}` / `{{CompanyName}}` / `{{SendingAccountFirstName}}` → confirm these Instantly fields exist and are mapped
 - [ ] Every integration/capability claim (APIs, ERP sync, live feeds) is real and approved
 - [ ] Keep the opt-out line

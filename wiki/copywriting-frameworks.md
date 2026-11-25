@@ -292,9 +292,9 @@ Preview: Hey John, with cost rising on imports from China, are you considering y
 **Pattern:** Observation/pain → here is what that is costing you → specific number.
 
 ```
-Hey John, most businesses at the 5-year mark are leaving $50K-$200K in available capital on the table - typically because they do not know what they qualify for.
+Hey John, teams running onboarding by hand usually lose 6-10 hours a week per CSM to setup calls that could be self-serve.
 
-Based on your revenue range, {{company}} likely qualifies for more than you would expect.
+At {{company}}'s headcount, that is likely a full hire's worth of time.
 
 Open to hearing more?
 ```
@@ -303,9 +303,9 @@ Open to hearing more?
 **Pattern:** Observation/pain → other companies like you are doing X → result they are getting.
 
 ```
-Hey John, congrats on crossing the 5-year mark. A lot of businesses at your stage are using growth capital to fund expansion without touching cash reserves.
+Hey John, congrats on the new funding round. A lot of teams at your stage are automating onboarding before they hire more CSMs.
 
-One owner in {{industry}} locked in $150K at terms that let him keep full ownership.
+One {{industry}} team cut time-to-first-value from 3 weeks to 4 days without adding headcount.
 
 Useful for {{company}}?
 ```
@@ -314,11 +314,11 @@ Useful for {{company}}?
 **Pattern:** Observation/pain → specific outcome → want to see if it applies?
 
 ```
-Hey John, since you just opened a second location, I imagine managing cash flow across both is a priority.
+Hey John, since you just doubled the CS team, I imagine keeping onboarding consistent across new hires is a priority.
 
-We helped a {{industry}} business secure $200K in growth capital in under 2 weeks - no equity, no collateral.
+We helped a {{industry}} team get every new account live in under a week, with no extra setup calls.
 
-Make sense to see what {{company}} qualifies for?
+Make sense to see if the same applies to {{company}}?
 ```
 
 ### CTA Patterns

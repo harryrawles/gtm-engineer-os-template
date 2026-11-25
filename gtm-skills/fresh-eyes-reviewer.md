@@ -155,7 +155,7 @@ This helps future sessions catch similar issues earlier.
 GTME: Fresh-eyes review this email before I push it to {{PRIMARY_CONTACT}} for approval:
 
 Subject: hiring speed
-Saw the senior eng hires coming in. Most VPs of Eng at this stage are losing 10-15 hrs/week interviewing low-signal candidates from outsourcing firms. We only source from VC-backed product companies - {{NAMED_PROOF_COMPANY}}'s VP closed 4 hires this way, saved $100k vs in-house. Want a sample shortlist?
+Saw the senior eng hires coming in. Most VPs of Eng at this stage are losing 10-15 hrs/week interviewing low-signal candidates from outsourcing firms. We only source from product-led scale-ups - {{NAMED_PROOF_COMPANY}}'s VP closed 3 hires this way, saved $60k vs in-house. Want a sample shortlist?
 
 Claude:
 Spawning fresh-eyes-reviewer sub-agent for independent review against voice + offer rules...
@@ -166,7 +166,7 @@ Spawning fresh-eyes-reviewer sub-agent for independent review against voice + of
 
 1. Word count: PASS - 64 words (within default 75-100, well within ATL 60 ceiling if recipient is VP - borderline)
 2. Banned words: PASS - no use of "leverage", "synergy", "game-changer", etc.
-3. Approved claims: PASS - "{{NAMED_PROOF_COMPANY}} $100k" is in offer.md approved list; "VC-backed product companies" is in differentiators
+3. Approved claims: PASS - "{{NAMED_PROOF_COMPANY}} $60k" is in offer.md approved list; "product-led scale-ups" is in differentiators
 4. Voice tone: PASS - direct, specific, data-led
 5. PRR structure: PASS - 4-part formula intact (Part 1 personalisation, Part 2 social proof with number, Part 3 offer with proof, Part 4 binary CTA)
 6. No question marks except CTA: PASS - only CTA has the question

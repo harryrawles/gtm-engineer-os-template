@@ -87,8 +87,7 @@ Ask for all missing fields in a single message. Do not ask one at a time unless 
 
 Required fields:
 - **Client Name** - full client name or company name
-- **Plan** - SalesOS / PerformanceOS / other
-- **MRR** - monthly recurring revenue, written as words, no dollar signs
+- **Plan** - the client's service plan or package
 - **Transition Type** - Permanent / Reassignment / Cover
 - **Handover Date** - the date ownership transfers
 - **Outgoing GTME Name** - who is handing over
@@ -113,7 +112,7 @@ If information is provided via a voice-to-text transcript, extract the relevant 
 Once all fields are collected, output the brief in this exact format:
 
 ```
-Client: [Client Name] | Plan: [Plan] | MRR: [MRR written as words]
+Client: [Client Name] | Plan: [Plan]
 Transition type: [Permanent / Reassignment / Cover]
 Handover date: [Date]
 Outgoing GTME: [Name] | Incoming GTME: [Name] | AM: [Name]
@@ -147,13 +146,13 @@ Outgoing GTME: [Name] | Incoming GTME: [Name] | AM: [Name]
 [Value - calls, launches, renewals]
 ```
 
-Present this as a draft using `message_compose_v1` with kind "other" and label "Handover Brief".
+Present this as an editable draft in chat, labelled "Handover Brief".
 
 ---
 
 ## STEP 4 - Output the Client Introduction Message
 
-Select the correct scenario based on handover type. Present as a separate editable draft after the brief, using a second `message_compose_v1` call with kind "other".
+Select the correct scenario based on handover type. Present as a separate editable draft after the brief.
 
 Skip this step entirely for Temporary Cover unless the absence is confirmed as 2+ weeks. For Temporary Cover, use the planned/unplanned answer already collected in Step 1, it determines who sends the message.
 
@@ -170,13 +169,11 @@ Label: "Client Introduction - AM", second variant "Incoming GTME Follow-up".
 ### Scenario 2 - Internal Reassignment
 
 **AM Message:**
-"Hi [Client Name] and team. I trust you are well. I wanted to make an official introduction to [Incoming GTME], a top-performing GTME on our team. [Incoming GTME] will be taking over as your primary point of contact going forward.
+"Hi [Client Name] and team. I trust you are well. I wanted to introduce [Incoming GTME], who will be your primary point of contact from [date].
 
-The reason we are making this change is simple: we want to give you the best possible experience and output from your relationship with us. [Incoming GTME] is uniquely positioned to do that and is one of our most experienced team members, capable of giving your campaigns the strategic direction and flawless execution an ICP and initiative like yours requires.
+[Incoming GTME] has been fully briefed on your campaigns, results to date, and what's next, so there will be no disruption to the work. [One line on why they're a good fit for this client.]
 
-You need the best of the best, and that is exactly what you are getting. That said, the entire team remains at your disposal.
-
-[Incoming GTME] will reach out shortly, but has already been fully briefed and you can be sure there will be no disruption to the service."
+They'll be in touch shortly."
 
 **Incoming GTME Follow-up:**
 "Hey [Client Name], [Incoming GTME] here. I've had a full handover and I'm across everything. I'll keep things moving and will be in touch with updates shortly. Looking forward to working with you."
@@ -214,7 +211,6 @@ Label: "Cover Notice - AM" (single variant, no follow-up).
 - One blank line between the heading and the paragraph below it.
 - One blank line between each section.
 - No em dashes anywhere in the output.
-- Do not use dollar signs, write monetary amounts as words.
 - Keep each brief section to 4 sentences maximum, concise, factual, no padding.
 
 ---
@@ -232,10 +228,9 @@ Label: "Cover Notice - AM" (single variant, no follow-up).
 
 Before presenting the drafts to the GTME:
 
-- [ ] All 14 required fields present, none blank, "None at this time" used where there is genuinely nothing to report?
+- [ ] All 13 required fields present, none blank, "None at this time" used where there is genuinely nothing to report?
 - [ ] For Temporary Cover, was planned vs. unplanned confirmed before drafting the Scenario 3 message?
 - [ ] Handover Brief and Client Introduction Message presented as two separate labelled drafts, never merged into one?
 - [ ] Correct scenario selected for the handover type, with the right sender (GTME or AM) named in Scenario 3?
 - [ ] `decision-log.md` entry captures the outgoing GTME, incoming GTME, and AM names alongside the transition type and date?
 - [ ] No em dashes anywhere in either draft?
-- [ ] MRR and any other monetary amounts written as words, no dollar signs?

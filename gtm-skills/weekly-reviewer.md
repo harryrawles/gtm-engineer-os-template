@@ -526,7 +526,7 @@ WINNER CANDIDATE - Hiring Signal v4 / Email 1
 Copy:
 Subject: hiring speed
 Saw you posted 5 senior eng roles in the last 30 days.
-I run engineering placement for 3 VC-backed SaaS teams - last quarter we got {{NAMED_PROOF_COMPANY}} fully staffed in 18 days and saved them $100k vs in-house recruiting.
+I run engineering placement for 3 SaaS teams - last quarter we got {{NAMED_PROOF_COMPANY}} fully staffed in 25 days and saved them $60k vs in-house recruiting.
 Want me to send a sample shortlist?
 
 Log this as a winner?

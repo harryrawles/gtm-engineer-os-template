@@ -53,7 +53,7 @@ Without this row, `gtm-skills/pattern-detector.md` cannot find repeating prompts
 Ask the GTME:
 1. **Reason for offboarding:**
    - Voluntary churn (client chose to leave)
-   - Involuntary churn (Instantly chose to end - this decision is made by the AM/leadership, not the GTME;
+   - Involuntary churn (we chose to end - this decision is made by whoever owns the account relationship, not the GTME;
      this skill executes it once made)
    - Engagement expired (planned)
    - Pause (will resume) - different workflow, escalate to the AM
@@ -187,7 +187,7 @@ to happen, hand it to the AM to execute rather than processing it yourself.
 - [ ] If pro-rated final month - calculate and invoice
 - [ ] If refunds due - issue per contract
 - [ ] If retainer credit owed back - process
-- [ ] Mark contract as terminated in 1Password / contract storage
+- [ ] Mark contract as terminated in your contract storage
 
 If complex billing situation - loop in the AM and the GTME for manual handling. Never auto-process refunds.
 

@@ -76,7 +76,7 @@ Run every item. Each must pass before launch.
 
 ### 3. Sequence Configuration in Instantly
 
-- [ ] Campaign name starts with `Instantly | ` (e.g. `Instantly | {{Client}} | {{Campaign description}}`) - standing naming convention across every client, confirmed 2026-07-13
+- [ ] Campaign name follows your naming convention (e.g. `{{PREFIX}} | {{Client}} | {{Campaign description}}`)
 - [ ] Sequence loaded in Instantly with correct step timing (Day 0, 3, 7, etc.)
 - [ ] Subject lines match approved copy exactly
 - [ ] Body text matches approved copy exactly (verify via Instantly preview)

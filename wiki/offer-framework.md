@@ -7,7 +7,7 @@
 > [wiki/offer-creation-theory.md](./offer-creation-theory.md). Read it if a step below feels arbitrary.
 
 Every "you/your" below is the **client**, this builds the client's offer for their own product, not
-Instantly's or GTME's pricing (that's the AM's, `wiki/glossary.md` (Roles)).
+your own agency's pricing (that's the AM's, `wiki/glossary.md` (Roles)).
 
 ---
 

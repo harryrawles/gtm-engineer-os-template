@@ -204,7 +204,7 @@ Step 1/2:
    the newest active one if the GTME didn't name one). Recently launched = 21 days or under since
    `start_date`. Established = 28 days or over. 22-27 days is a grey zone, use judgement and say which way
    you leaned and why.
-2. **Traction.** Very little traction = reply rate at or under the internal floor in
+2. **Traction.** Very little traction = reply rate at or under the floor in
    `wiki/email-benchmarks.md` (0.2%), or so few replies the rate isn't meaningful yet. Has
    replies = above that floor.
 3. **Sentiment split** (only if it has replies). Use the Step 1.7 lead-label data: mostly negative =

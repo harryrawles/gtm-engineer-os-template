@@ -7,13 +7,13 @@ Client names are shown as `{{CLIENT_A}}`…`{{CLIENT_H}}` to keep the template b
 ---
 
 ```
-EOD Report - GTME - Wednesday, July 2, 2026
+EOD Report - GTME - Wednesday
 
 MOVED
 
 {{CLIENT_A}}
 
-* 0 opps on 31k sends, offer's unclear not targeting, rewrote the hook and cut the offer to one claim, live Thurs.
+* 0 opps on 30k sends, offer's unclear not targeting, rewrote the hook and cut the offer to one claim, live Thurs.
 * Extended revision cycle before this. If Thurs variant doesn't move PRR, looping the CSM in on the relationship.
 
 {{CLIENT_B}}
@@ -22,7 +22,7 @@ MOVED
 
 {{CLIENT_C}}
 
-* Built two campaigns, one for non-profits and one for universities - new accounts, no prior data to diagnose against yet.
+* Built two campaigns, one per ICP segment - new accounts, no prior data to diagnose against yet.
 
 {{CLIENT_D}}
 
@@ -34,11 +34,11 @@ MOVED
 
 {{CLIENT_F}}
 
-* Enriched 400k companies (200k at 1-10 headcount, 200k at 11-25) to clear the TAM ceiling flagged last week.
+* Enriched 250k companies across two headcount bands to clear the TAM ceiling flagged last week.
 
 All Clients
 
-* Reached out to all clients about campaign pauses over Friday and Monday. Pauses handled accordingly.
+* Told all clients about the planned sending pause over the public holiday.
 
 BLOCKED
 
@@ -58,7 +58,7 @@ NEXT
 
 {{CLIENT_G}}
 
-* Client pushed back on the Testimonial playbook again. Churn risk.
+* Client pushed back on the proposed playbook.
 * Open to other playbook proposals as a basis for testing.
 * Come back with a fresh angle that works within their constraints.
 ```

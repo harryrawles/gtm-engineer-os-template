@@ -213,7 +213,7 @@ Output a running portfolio table as each client completes:
 | Client C     | 1.8%  | 5        | YES       | NO       | YES     | NO        | Full review  |
 | ...          |       |          |           |          |         |           |              |
 
-Clients needing full review: [n] of 20
+Clients needing full review: [n] of [total]
 Estimated Friday time remaining: [n × 15 min] + ~[20 × 3 min] reports
 ```
 
@@ -225,7 +225,7 @@ For each flagged client, run this chain (Steps 0-5) in single-client mode.
 
 Priority order: Red/Critical first → Amber → Green (if flagged).
 
-### Phase 3 - Reports (all 20 clients)
+### Phase 3 - Reports (all clients)
 
 After all full reviews complete, generate reports for flagged clients via `gtm-skills/client-report-writer.md`. Green-pass clients get a 3-line status update (PRR, meetings, no action) rather than a full report - saves ~30 min across the portfolio.
 
@@ -233,7 +233,7 @@ After all full reviews complete, generate reports for flagged clients via `gtm-s
 
 | Activity | Time |
 |----------|------|
-| Triage: 20 clients × 2 min | ~40 min |
+| Triage: ~2 min per client | ~40 min for 20 clients |
 | Full reviews: typically 5-8 flagged × 15-20 min | 75-160 min |
 | Reports: flagged clients full + green-pass status updates | ~45 min |
 | **Total** | **2.5-4 hours** |
@@ -245,7 +245,7 @@ This compares to 5-6 hours running full reviews on every client. The efficiency 
 
 ## RULES
 
-- **Use Portfolio Triage Mode for 20 clients.** Run quick-review triage on all clients first (see Portfolio Triage Mode above), then run single-client mode only on flagged clients. Do not run full review on all 20 clients sequentially - that is 5-6 hours, not 2.5-4 hours.
+- **Use Portfolio Triage Mode for large portfolios.** Run quick-review triage on all clients first (see Portfolio Triage Mode above), then run single-client mode only on flagged clients. Do not run full review on all 20 clients sequentially - that is 5-6 hours, not 2.5-4 hours.
 - **Never skip Step 2.** The deep review IS the compounding loop. If you skip it, the OS does not learn anything from this week.
 - **Always run the synthesis step.** That is weekly-reviewer Step 7 - the meta-takeaway that turns individual entries into compounding patterns. Without it, the entries pile up without ever connecting.
 - **Pause at every meaningful checkpoint.** This chain is decision support - the GTME confirms winners, losers, test launches, and the report before send.

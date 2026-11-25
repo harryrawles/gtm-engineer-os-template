@@ -146,7 +146,7 @@ respecting the global rate limit.
 | Field | Type | Notes |
 |---|---|---|
 | `id` | string | UUID |
-| `name` | string | required. **Naming convention (all clients): always prefix with `Instantly \| `** - e.g. `Instantly \| {{Client}} \| Checkout Sequence V2`. Confirmed 2026-07-13. |
+| `name` | string | required. **Naming convention:** pick one consistent pattern for all clients, e.g. `{{PREFIX}} \| {{Client}} \| {{Campaign description}}`. |
 | `status` | number enum | see Global field conventions above |
 | `not_sending_status` | number\|null enum | `1`=out of schedule, `2`=waiting for lead to process, `3`=daily send limit hit, `4`=all sending accounts hit their limit, `99`=error, contact support. Read-only. |
 | `campaign_schedule` | object, required | `{ start_date, end_date, schedules: [{ name, timing: {from, to} (HH:MM), days: {"0".."6": bool, 0=Sun}, timezone (IANA) }] }`, min 1 schedule |

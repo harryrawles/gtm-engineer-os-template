@@ -64,8 +64,8 @@ If nothing appears: check `jq` is installed and the scripts are executable.
 
 ### Step 4 - No tool-name customisation needed
 Unlike earlier versions, the safety guard **no longer** hard-codes fully-qualified tool names. It matches
-on the operation (everything after the last `__`), so it works across both connected Instantly namespaces
-(`mcp__…Acme_Instantly__…`, `mcp__…Globex_Instantly_account__…`) and Slack/Stripe out of the box. To gate a
+on the operation (everything after the last `__`), so it works across any connected Instantly namespace
+(e.g. `mcp__…Acme_Instantly__…`, `mcp__…Globex_Instantly_account__…`) and Slack/Stripe out of the box. To gate a
 **new** mutating operation, add its operation name (no namespace) to the `BLOCKED_OPS` array in
 `.claude/hooks/safety-guard.sh`. Read-only operations (`list_`/`get_`/`analytics_`/`count_`/`search_`/`*_status`)
 are never listed, so reads stay automatic.

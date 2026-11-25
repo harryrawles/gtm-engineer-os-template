@@ -126,7 +126,7 @@ Ask in this order:
 5. How would you describe what they do in 2-3 sentences?
 6. Who is the primary contact? Name, title, email.
 7. Are there other key contacts I should know about?
-8. Why did they hire Instantly.ai? What were they doing before?
+8. Why did they hire you? What were they doing before?
 9. Who is the assigned Account Manager (AM) for this client? This is who future billing/domain/refund
    escalations tag, per `wiki/glossary.md` (Roles).
 10. Anything else relevant - quirks, sensitivities, preferences, things they care about beyond metrics?
@@ -252,7 +252,7 @@ each one into a proof point (a factor of value) stated simply.
 31. **What they sell:** product/service name, category, delivery model, pricing range → `What They Sell`.
 
 **Push back if answers are vague at any step.** Specifics beat clichés. "Significant cost savings" is not
-approved - "40-70% cost saving vs local US hires" is.
+approved - "30% lower cost per hire" is.
 
 **After Phase 2:**
 - Write `clients/{slug}/offer.md` in full (all sections above should already be filled step by step)
@@ -406,7 +406,7 @@ Suggested next step: "Build the first lead list for {{client_name}}"
 - **If the GTME says "batch the rest"** - ask all remaining questions in the current phase together.
 - **If the GTME says "I don't know yet"** - mark as `{{TO CONFIRM}}` and move on. Do not stall.
 - **If the GTME pastes a brief or call notes** - extract answers from it, then ask only what is missing.
-- **Push back on vague answers.** Specificity is the whole point. "Faster hiring" is not an outcome. "92% of roles filled in 21 days" is.
+- **Push back on vague answers.** Specificity is the whole point. "Faster hiring" is not an outcome. "85% of roles filled in 30 days" is.
 - **No corporate filler in your questions.** Direct, concise, no fluff.
 - **At the end of each phase** - write the file, confirm, and ask permission to proceed.
 

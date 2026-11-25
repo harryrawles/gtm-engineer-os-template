@@ -3,11 +3,10 @@
 # test-safety-guard.sh - allow/block matrix for the PreToolUse safety guard
 # =============================================================================
 # Feeds synthetic tool-call payloads to .claude/hooks/safety-guard.sh and
-# asserts the exit code (2 = block, 0 = allow). Covers both connected Instantly
+# asserts the exit code (2 = block, 0 = allow). Covers two example Instantly
 # namespaces (Acme + Globex), Slack, Stripe, the default-deny fallthrough for
 # unreviewed operations, and the read/write edge cases so the guard cannot
-# silently go inert again (the original H3 finding, and the later stale-
-# blocklist finding from the pre-onboarding review).
+# silently go inert.
 # =============================================================================
 set -uo pipefail
 cd "$(dirname "$0")/../.." || exit 1

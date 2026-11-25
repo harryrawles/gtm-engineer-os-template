@@ -63,7 +63,7 @@ Merge fields are Instantly variables - keep them as-is (`{{firstName | there}}`,
 ### Email 1 - Safe Variant (default, recommended)
 
 ```
-Hi {{firstName | there}}, if you had the choice: 5-star hotel or Airbnb - would you pick both? That's exactly what {{COMPANY}} homes were built for.
+Hi {{firstName | there}}, {{BINARY_HOOK}} That's exactly what {{COMPANY}} was built for.
 
 I can set you up with instant access and a {{DISCOUNT}} credit for your first stay - one click, no signup hassle.
 
@@ -78,7 +78,7 @@ If you don't want to hear from me anymore, just let me know.
 ### Email 1 - Pre-Created Access Variant (⚠️ only with legal sign-off + compliant, consented flow)
 
 ```
-Hi {{firstName | there}}, if you had the choice: 5-star hotel or Airbnb - would you pick both? That's exactly what {{COMPANY}} homes were built for.
+Hi {{firstName | there}}, {{BINARY_HOOK}} That's exactly what {{COMPANY}} was built for.
 
 I took the liberty of creating a {{COMPANY}} account for you and set up a {{DISCOUNT}} discount for your first stay:
 

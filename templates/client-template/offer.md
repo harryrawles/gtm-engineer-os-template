@@ -10,7 +10,7 @@ Built via the 9-step worksheet in `wiki/offer-framework.md` (the theory behind e
 
 {{Write the offer as a single sentence: [Outcome] for [ICP] in [Timeframe] - [Risk reversal / guarantee]}}
 
-**Example:** "We place vetted engineers from VC-backed product companies within 72 hours - no hire, no fee."
+**Example:** "We place vetted engineers from product-led scale-ups within 5 days - no hire, no fee."
 
 ---
 
@@ -121,11 +121,11 @@ Numbers and named logos beat vague claims. Use these in copy.
 
 | Proof type | Detail |
 |-----------|--------|
-| Case study 1 | {{Client name + specific result. e.g. "Saved AcmeCo $100k in hiring costs"}} |
+| Case study 1 | {{Client name + specific result. e.g. "Saved AcmeCo $60k in hiring costs"}} |
 | Case study 2 | {{Client name + result}} |
 | Case study 3 | {{Client name + result}} |
-| Aggregate stat | {{e.g. "92% of roles filled within 21 days"}} |
-| Volume stat | {{e.g. "70+ funded startups placed with"}} |
+| Aggregate stat | {{e.g. "85% of roles filled within 30 days"}} |
+| Volume stat | {{e.g. "40+ startups placed with"}} |
 | Approved logos | {{Named client/customer logos approved for use in copy - list none if nothing is approved yet}} |
 
 ---

@@ -4,7 +4,7 @@ Best-practice references and checklists. Part of the **shared layer**, available
 
 ## What's here today
 
-`best-practices/playbooks/` - 26 reusable, client-agnostic campaign playbooks (uploaded ColdIQ material,
+`best-practices/playbooks/` - 25 reusable, client-agnostic campaign playbooks (uploaded ColdIQ material,
 e.g. funding, hiring signal). Start-points for any client's campaign, adapt per client, never use verbatim
 (`CLAUDE.md` → *Source Knowledge*).
 
@@ -21,4 +21,4 @@ them by path; Claude auto-discovers them.
 
 **Rule:** nothing in this folder may contain a specific client's private data. Best practices are universal.
 
-See root `CLAUDE.md` → *Shared Layer* and *The Compounding Loop* for how this fits the OS.
+See root `CLAUDE.md` → *Shared Brain* and *The Compounding Loop* for how this fits the OS.

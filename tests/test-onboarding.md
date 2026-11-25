@@ -15,7 +15,6 @@ Run client onboarder for Acme Health
 Claude should:
 
 ### 1. Detect state
-- Read CLAUDE.md and detect ~8 placeholders remaining
 - Read clients/{slug}/*.md and detect all blank/template
 - Output a state report
 
@@ -25,7 +24,6 @@ Claude should:
 - Ask about industry (HR tech for healthcare)
 - Continue 10 questions in Phase 1
 - After all answered, write to:
-  - CLAUDE.md (placeholder replacement)
   - clients/{slug}/overview.md
   - clients/{slug}/_config.md
 - Confirm Phase 1 complete
@@ -64,7 +62,7 @@ Claude should:
 
 - All 5 phases run in order
 - Files written in correct locations (clients/{slug}/ not wiki/)
-- Placeholders replaced in CLAUDE.md
+- Root CLAUDE.md left untouched
 - _config.md populated with at least client_name, industry, primary_contact
 - Pushback occurs on vague answers
 - Resumable on interruption (verify by stopping mid-Phase-3, restarting, confirm it picks up at Phase 3 next question)
