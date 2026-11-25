@@ -1,0 +1,196 @@
+# Index - GTM Engineer OS (Multi-Client)
+
+Content catalog for the multi-client OS. The hub is [CLAUDE.md](./CLAUDE.md); this is the map.
+
+## Multi-Skill Chains (start here for common workflows)
+
+| File | When to use |
+|------|------------|
+| gtm-skills/chain-build-campaign.md | "Build a campaign" - smart-routes through 4-7 skills with conditional skipping |
+| gtm-skills/chain-diagnose-campaign.md | "Diagnose [campaign]" - primary diagnostic + routes to right specialist |
+| gtm-skills/chain-weekly-review-full.md | "Friday review for [client]" - end-to-end weekly compounding loop |
+
+## Quick Links
+
+- **The hub / rules / routing:** [CLAUDE.md](./CLAUDE.md)
+- **Add a new client:** [BOOTSTRAP.md](./BOOTSTRAP.md)
+- **Daily operations & switching clients:** [OPERATING-RHYTHM.md](./OPERATING-RHYTHM.md)
+- **Instantly API (per-client key) + optional MCPs:** [MCP-SETUP.md](./MCP-SETUP.md) · wrapper reference: [sops/instantly-api.md](./sops/instantly-api.md)
+- **Hooks + /gtm:compound:** [HOOKS-SETUP.md](./HOOKS-SETUP.md)
+- **Acronyms:** [wiki/glossary.md](./wiki/glossary.md)
+- **Diagrams:** [wiki/diagrams.md](./wiki/diagrams.md)
+
+## Clients & State
+
+| Path | What it contains |
+|------|----------------|
+| clients/{slug}/ | One isolated folder per client (created from the template). Git-tracked EXCEPT `secrets/`. |
+| clients/{slug}/secrets/ | GIT-IGNORED - this client's Instantly API key, workspace id/url. Never committed. |
+| clients/_archived/ | Offboarded clients (skipped by portfolio sweeps). Created on first offboard. |
+| _state/active-client | Git-ignored pointer to the current active client slug. |
+| templates/client-template/ | The skeleton every new client is copied from (run `client-onboarder`). |
+
+## Per-Client Context - files inside each `clients/{slug}/`
+
+| File | What it contains |
+|------|----------------|
+| _config.md | Central config (slug, tier, industry, Instantly workspace) - referenced by other files |
+| MEMORY.md | Always-loaded scratchpad - current focus, watch-outs, client preferences |
+| session-log.md | Per-client invocation log. Powers pattern-detector. Auto-written by every skill. |
+| overview.md | Identity, contract, SLA, success criteria |
+| icp.md | Target ICP, signal priority, lead filters, avoid list, DM mapping |
+| offer.md | What they sell, proof points, differentiators, approved claims |
+| voice.md | Brand voice, tone rules, banned words, spelling default |
+| campaign-state.md | Live campaigns, infrastructure, tools/tech stack |
+| decision-log.md | Why decisions were made (updated by weekly-reviewer) |
+| comms-log.md | Client communications log |
+| competitive-intel.md | Competing offers, battle cards |
+| copy-library.md | Top performers + graveyard for this client |
+| test-log.md | Split test history |
+
+## Shared Layer - folders available to every client
+
+| Path | What it contains |
+|------|----------------|
+| gtm-skills/ | Skill + chain definitions, pattern-detector, skill-forge |
+| wiki/ | Shared knowledge base (see below) |
+| frameworks/ | Strategic frameworks & mental models - index in `frameworks/README.md`; also the promotion destination for de-identified learnings |
+| sops/ | Standard operating procedures. `sops/instantly-api.md` = how the OS calls each client's Instantly workspace via the API wrapper `.claude/bin/instantly.sh` (per-client keys, read/write gating). Add your own runbooks over time (`sops/README.md`). |
+| best-practices/ | Best-practice references & checklists |
+| best-practices/playbooks/ | Reusable client-agnostic campaign playbooks (e.g. funding) - start-points for any client's campaign |
+| best-practices/growth-plays.md | Client-agnostic tactical plays (re-run non-repliers, add a sequence step) for extracting more value from an existing list without fresh data, used by `gtm-skills/client-checkin-writer.md` |
+| .claude/skills/ | Vendored third-party Claude Skill packages (Anthropic's official format), invocable directly - see `.claude/skills/README.md`. Currently: `skill-creator/` (draft/iterate new skills) and `find-skills/` (discover and install skills from the open skills.sh ecosystem, install step tightened to always ask first). Distinct from `gtm-skills/`, which is this OS's own markdown routing convention. |
+| .claude/agents/ | Custom Claude Code sub-agent types this OS defines itself, spawned via the `Agent` tool from within a `gtm-skills/` skill - see `wiki/_subagent-patterns.md`. Currently: `fresh-eyes-reviewer` (Read/Grep/Glob only, structurally cannot write - used by `gtm-skills/fresh-eyes-reviewer.md` for independent QA on any artefact). |
+| templates/ | Reusable output templates + `client-template/` skeleton |
+
+## Shared Knowledge - Copywriting
+
+| File | What it contains |
+|------|----------------|
+| wiki/_skill-context.md | Standard skill preamble (every skill loads this - includes active-client resolution) |
+| wiki/copywriting-101.md | Canonical rules + 4-part formula + sequence structure + campaign style selection (Offer-Led/Pro-Bono/Three Ideas) + CTA ladder |
+| wiki/copywriting-frameworks.md | 13 alternative named frameworks + ColdIQ playbook |
+| wiki/first-principles-client-acquisition.md | Meta-framework: Human+Stimulus=Action, Stimuli vs Fundamentals, Stimuli Entropy, Multi-Disciplinary Thinking, mental models toolkit |
+| wiki/acquisition-systems-theory.md | Systems theory: sub-systems funnel, throughput/bottlenecks, Polaris/non-linear metrics, scale, entropy, feedback loops |
+| wiki/darwinian-acquisition-theory.md | Biological grounding for the scientific method: genotypes, fitness, traits, splicing, cross-pollination, network conjugation |
+| wiki/system-design-process.md | 6-step process for building a new client acquisition sub-system/channel from scratch |
+| wiki/offer-creation-theory.md | Offer psychology: 6 Pillars, Pools of Confidence/Pain, Action Thresholds, latent conditions, pricing philosophy |
+| wiki/offer-framework.md | 12-step offer building |
+| wiki/psychological-principles.md | Cognitive biases for copy |
+| wiki/scientific-method.md | Split test methodology |
+| wiki/_active-test-rules.md | Guardrails for in-flight tests (do-not-touch rules while a test runs) |
+| wiki/subject-lines.md | 5 subject line formulas + A/B testing |
+| wiki/atl-btl-messaging.md | VP/C-Level vs Manager/IC messaging |
+| wiki/objection-library.md | Top 15 objections with response templates |
+
+## Shared Knowledge - Strategy and Sourcing
+
+| File | What it contains |
+|------|----------------|
+| wiki/signal-sourcing.md | 6 core signals, scoring framework, 11 GTM plays |
+| wiki/buying-triggers.md | 137-trigger taxonomy |
+| wiki/list-building.md | ICP scoring (100-pt), ABM tiers, validation |
+| wiki/personalization-at-scale.md | 6 buckets, hooks, AI prompts |
+| wiki/industry-vernacular.md | Language guides per industry |
+| wiki/inbound-orchestration.md | Detecting and activating inbound signals before cold outreach |
+
+## Shared Knowledge - Operations and Reference
+
+| File | What it contains |
+|------|----------------|
+| wiki/deliverability.md | Benchmarks, symptom-to-cause diagnosis, list verification (GTME-owned), what to flag the AM for |
+| wiki/email-benchmarks.md | Industry benchmarks + the authoritative PRR tier table (`wiki/email-benchmarks.md`) |
+| wiki/instantly-api-reference.md | Full Instantly v2 API reference (every endpoint, rate limits, gotchas, undocumented areas) - `sops/instantly-api.md` is the "how the OS calls it" SOP, this is the deep reference |
+| wiki/glossary.md | All acronyms defined |
+| wiki/diagrams.md | Mermaid flowcharts of OS workflows |
+| wiki/_subagent-patterns.md | When and how skills spawn isolated sub-agents |
+
+## Skills - Setup and Cadence
+
+| File | When to use |
+|------|------------|
+| gtm-skills/pattern-detector.md | **Runs FIRST every session.** Detects repeating prompts, proposes skill-forge. The auto-improvement loop. |
+| gtm-skills/skill-forge.md | Triggered by "forge it" reply or direct call. Drafts new skills from detected patterns. |
+| gtm-skills/client-onboarder.md | **Run to add a new client.** Copies the template to `clients/{slug}/`, sets it active, conversational setup. |
+| gtm-skills/weekly-reviewer.md | **Run every Friday** (per client or portfolio). Compounding loop. |
+| gtm-skills/client-health-scorer.md | Monday portfolio health check + at-risk flagging |
+| gtm-skills/pre-launch-check.md | Gate against unresolved placeholders |
+| gtm-skills/test-readiness-check.md | Pre-test gate - validates a Queued test against Step 1 of the scientific method before launching |
+
+## Skills - Copy and Campaigns
+
+| File | When to use |
+|------|------------|
+| gtm-skills/chain-build-campaign.md | **Use this for full-cycle campaign builds** - smart-routes through up to 7 skills |
+| gtm-skills/chain-diagnose-campaign.md | **Use this for performance diagnostics** - routes to right specialist |
+| gtm-skills/cold-email-writer.md | Writing new email sequences (invoked inside chain-build-campaign) |
+| gtm-skills/spintax-ninja.md | Applying `{{RANDOM|...}}` spintax to drafted copy, once cold-email-writer has produced it |
+| gtm-skills/campaign-launcher.md | Pre-flight checklist before launch (invoked inside chain-build-campaign) |
+| gtm-skills/campaign-optimiser.md | Diagnose underperforming campaigns (invoked inside chain-diagnose-campaign) |
+| gtm-skills/campaign-analyst.md | Performance analysis |
+| gtm-skills/test-launcher.md | Fire the next queued split test (invoked inside chains) |
+
+## Skills - Strategy and Sourcing
+
+| File | When to use |
+|------|------------|
+| gtm-skills/signal-sourcer.md | Designing signal-based campaigns |
+| gtm-skills/personalization-strategist.md | Personalisation at scale |
+| gtm-skills/list-builder.md | ICP scoring, ABM tiers, list hygiene |
+| gtm-skills/icp-builder.md | Building or refining ICP |
+
+## Skills - Operations and Crises
+
+| File | When to use |
+|------|------------|
+| gtm-skills/reply-handler.md | Routing inbound replies |
+| gtm-skills/client-request-handler.md | Mid-week client requests |
+| gtm-skills/deliverability-doctor.md | Diagnosing and recovering deliverability |
+| gtm-skills/incident-responder.md | Critical incidents (blacklist, outage, breach) |
+| gtm-skills/inbound-activator.md | Detect inbound signal → enrich → qualify → activate outbound |
+| gtm-skills/fresh-eyes-reviewer.md | Spawn independent sub-agent for unbiased QA on any artefact |
+
+## Skills - Reporting and Relationship
+
+| File | When to use |
+|------|------------|
+| gtm-skills/client-report-writer.md | Weekly client performance reports |
+| gtm-skills/workspace-deep-report.md | On-demand deep-dive across a client's whole Instantly workspace (GTME picks the client), catches risk early, drafts a tone-matched client message, and, on confirmation, logs the finding to decision-log.md/campaign-state.md for cold-email-writer.md to draw on |
+| gtm-skills/client-checkin-writer.md | Three-times-weekly (Mon plan / Wed results / Fri recap + next week), portfolio-wide relationship check-in, warm and never performance-graded, distinct from the performance-driven skills above, logs every send to comms-log.md |
+| gtm-skills/eod-report-writer.md | Daily end-of-day report (portfolio-wide) - MOVED / BLOCKED / NEXT, posted to team Slack |
+| gtm-skills/qbr-writer.md | Quarterly Business Reviews |
+| gtm-skills/client-offboarder.md | End-of-engagement workflow (archives the client folder, promotes abstracted learnings) |
+| gtm-skills/handover-brief-writer.md | Handover Brief + Client Introduction Message for a client moving between GTMEs |
+
+## Examples
+
+| File | What it shows |
+|------|--------------|
+| examples/sample-weekly-review.md | What a Friday review session produces |
+| examples/sample-client-report.md | What a sent weekly report looks like |
+| examples/sample-eod-report.md | What an end-of-day team report looks like |
+| examples/sample-decision-log-entries.md | What good decision log entries look like |
+
+## Tests
+
+| File | What it tests |
+|------|--------------|
+| tests/test-onboarding.md | Client onboarder flow |
+| tests/test-cold-email-writer.md | Copy quality |
+| tests/ci/check-links.sh | CI: every referenced `.md` path resolves (link integrity) |
+| tests/ci/check-secrets.sh | CI: no tracked secrets, credentials, or key material |
+| tests/ci/check-em-dash.sh | CI: no em dashes anywhere in the OS (the GTME's writing rule), excludes vendored `.claude/skills/**` |
+| tests/ci/test-safety-guard.sh | CI: safety-guard block/allow matrix |
+| .github/workflows/ci.yml | CI runner - shellcheck + the four checks above, on every push/PR |
+
+## Raw Inputs
+
+| File | What it contains |
+|------|----------------|
+| raw/onboarding-intake.md | Pre-call client worksheet (sent before kickoff) |
+
+## Assets
+
+| File | What it contains |
+|------|----------------|
+| assets/README.md | Index of external assets (case studies, decks, etc.) |

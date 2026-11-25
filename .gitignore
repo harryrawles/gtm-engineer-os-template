@@ -1,0 +1,43 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Env / credentials (never commit)
+.env
+**/.env
+.env.*
+*.pem
+*.key
+credentials.json
+
+# Multi-client - per-client secrets are NEVER committed
+# (only templates/client-template/secrets/credentials.template.md - the shape - is tracked)
+clients/*/secrets/
+
+# Local session state - the active-client pointer is machine-local, not shared
+_state/active-client
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temp files
+*.tmp
+*.bak
+*~
+*.log
+
+# Node (in case any tooling lands here)
+node_modules/
+
+# Python (in case scripts)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Claude Code session logs (local audit trail - do not commit)
+.claude/sessions/

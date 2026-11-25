@@ -1,0 +1,148 @@
+---
+name: client-report-writer
+description: Generates the weekly client-facing performance report in a fixed, under-300-word format - this week's metrics, campaign breakdown, what's working, what's being tested, and next week's plan.
+triggers:
+  - "Write the weekly report"
+  - "write the client update"
+  - "prepare this week report"
+reads:
+  - "wiki/_skill-context.md"
+  - "clients/{slug}/overview.md, campaign-state.md, test-log.md"
+writes:
+  - "(none - report is presented as a draft for the GTME to send)"
+---
+
+# Skill: Client Report Writer
+
+**Trigger:** "Write the weekly report", "write the client update", "prepare this week report"
+
+**Context:** The GTME sends a weekly performance update to the client. The report should be concise, data-led, and make the client feel informed and confident. No padding. No corporate filler.
+
+---
+
+## STANDARD CONTEXT
+
+Read `wiki/_skill-context.md` for the standard files every skill loads. Then add the skill-specific reads below.
+
+## SKILL-SPECIFIC READS
+
+**MUST READ (every time):**
+- `clients/{slug}/overview.md` - client name and reporting day
+- `clients/{slug}/campaign-state.md` - active campaigns and benchmarks
+- `clients/{slug}/test-log.md` - what is currently being tested (to include in "what is next")
+
+---
+
+## STEP 0 - Log Invocation (mandatory)
+
+Before any other step, append one row to `clients/{slug}/session-log.md` Active Log table:
+
+```
+| YYYY-MM-DD HH:MM | {{paraphrased prompt summary, ~60 chars}} | {{this skill name}} | (filled at end) |
+```
+
+Rules (per `wiki/_skill-context.md` "Session-Log Write"):
+- Write at START, not end - captures the attempt even if the skill fails mid-execution
+- Paraphrase the prompt - no raw prospect names, emails, or sensitive data
+- Skill name only (no path)
+- Outcome column filled at end of execution
+
+Without this row, `gtm-skills/pattern-detector.md` cannot find repeating prompts and the auto-improvement loop breaks.
+
+---
+
+## BEFORE YOU WRITE
+
+Pull from the Instantly API (via `.claude/bin/instantly.sh` for the active client) for the past 7 days:
+- Sends per campaign
+- PRR per campaign
+- Meetings booked
+- Bounce rate
+
+Ask the GTME to paste the data if the Instantly API can't be reached (missing/invalid key).
+
+Also confirm from the GTME:
+- Any meetings booked from replies this week
+- Any notable positive or negative replies worth mentioning
+- Any changes made to campaigns this week
+
+---
+
+## REPORT FORMAT
+
+Output the report exactly in this format. Do not add sections. Do not add padding.
+
+---
+
+**Week ending:** {{DATE}}
+**Client:** {{CLIENT_NAME}}
+
+---
+
+**This week**
+
+| Metric | This week | Last week | Change |
+|--------|-----------|-----------|--------|
+| Emails sent | {{n}} | {{n}} | {{+/-n}} |
+| Positive reply rate | {{%}} | {{%}} | {{+/-%}} |
+| Meetings booked | {{n}} | {{n}} | {{+/-n}} |
+| Bounce rate | {{%}} | {{%}} | {{+/-%}} |
+
+---
+
+**Campaign breakdown**
+
+| Campaign | Signal | Sends | PRR | Meetings | Status |
+|----------|--------|-------|-----|----------|--------|
+| {{Name}} | {{Signal}} | {{n}} | {{%}} | {{n}} | Green / Amber / Red |
+
+---
+
+**What is working**
+
+{{1-3 bullets. Specific observations - not vague positives. e.g. "Email 1 on the hiring signal is at 2.1% PRR - above benchmark. The offer framing around time-to-hire is resonating."}}
+
+---
+
+**What we are watching / testing**
+
+{{1-2 bullets. What is underperforming and what is being done about it. e.g. "Email 2 PRR is low. Testing a shorter CTA this week - will have data by [date]."}}
+
+---
+
+**Next week**
+
+{{2-3 bullets. What is happening next week - new campaigns, test launches, volume changes, etc.}}
+
+---
+
+**Anything you need from me**
+
+{{If the GTME needs something from the client - approval, assets, contacts. Leave blank if nothing needed.}}
+
+---
+
+## REPORT RULES
+
+- Under 300 words total.
+- No corporate filler. No "hope you are well". No "please do not hesitate to contact me".
+- Data from Instantly is the source of truth. Do not round numbers.
+- If a campaign is Red (PRR under 0.2%, per `wiki/email-benchmarks.md`), name the root cause and the fix - do not hide it. This should never be the client's first time hearing it: flag underperformance proactively, with a plan attached, before the report does.
+- Report the client's actual PRR plainly, that is not an internal figure. Do not describe it using the internal floor/tier language from `wiki/email-benchmarks.md`, that stays internal.
+- If something worked, say specifically why (not just "good results this week").
+- The "What is next" section should make the client feel like there is always a plan.
+- Sign off as the GTME by name, not as the company.
+
+---
+
+## QA CHECKLIST
+
+Before sending the report to the client:
+
+- [ ] Every number pulled from Instantly for the active client, none estimated or carried over from memory?
+- [ ] Report shows "Positive reply rate" only, no bare unlabeled "reply rate" field anywhere?
+- [ ] No internal PRR-tier language (Exceptional/Great/Good/Below standard/Poor) from `wiki/email-benchmarks.md` leaking into client-facing text?
+- [ ] Any Red campaign names the root cause and the fix, and was already flagged to the client before this report?
+- [ ] Tone is data-led with no corporate filler or padding?
+- [ ] Under 300 words, and no sections added beyond the fixed format?
+- [ ] Signed off as the GTME by name, not the company?
